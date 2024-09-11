@@ -1,7 +1,6 @@
 langchain
 dotenv
 streamlit
-langchain_community.document_loaders
 pandas
 chromadb
 uuid
