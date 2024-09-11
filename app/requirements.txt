@@ -4,4 +4,4 @@ streamlit
 pandas
 chromadb
 uuid
-re
+
