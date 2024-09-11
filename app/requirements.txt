@@ -5,4 +5,5 @@ pandas
 chromadb
 uuid
 langchain-community
+langchain_groq
 
