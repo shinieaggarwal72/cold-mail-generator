@@ -1,5 +1,5 @@
 langchain
-dotenv
+python-dotenv
 streamlit
 pandas
 chromadb
