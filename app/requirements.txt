@@ -6,4 +6,5 @@ chromadb
 uuid
 langchain-community
 langchain-groq
+BeautifulSoup4
 
