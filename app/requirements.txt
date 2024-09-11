@@ -4,4 +4,5 @@ streamlit
 pandas
 chromadb
 uuid
+langchain-community langchain-core
 
