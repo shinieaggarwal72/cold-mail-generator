@@ -4,4 +4,3 @@ The user just needs to enter the URL of the job.
 
 Get your API key and replace it with <YOUR_API_KEY> in chains.py
 
-https://cold-mail-generator-qylj.onrender.com/ 
