@@ -38,7 +38,20 @@ class Portfolio:
                 )
 
     def query_links(self, skills):
-        """Return most relevant project links based on given skills."""
+        # If a list of skills is passed, join them into one text
+        if isinstance(skills, list):
+            skills = ", ".join(skills)
+    
+        # Query the ChromaDB collection
         results = self.collection.query(query_texts=[skills], n_results=2)
-        return results.get("metadatas", [])
+    
+        # Extract and flatten the metadata links
+        metadatas = results.get("metadatas", [])
+        links = []
+        for meta_list in metadatas:
+            for meta in meta_list:
+                if "links" in meta:
+                    links.append(meta["links"])
+        return links
+
 
