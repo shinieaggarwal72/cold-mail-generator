@@ -11,7 +11,7 @@ class Portfolio:
 
         # Default location (inside app/resources/my_portfolio.csv)
         if file_path is None:
-            file_path = os.path.join(current_dir, "resources", "my_portfolio.csv")
+            file_path = os.path.join(current_dir, "resource", "my_portfolio.csv")
 
         # ✅ Ensure file exists
         if not os.path.exists(file_path):
@@ -41,3 +41,4 @@ class Portfolio:
         """Return most relevant project links based on given skills."""
         results = self.collection.query(query_texts=[skills], n_results=2)
         return results.get("metadatas", [])
+
