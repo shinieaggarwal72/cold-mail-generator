@@ -4,11 +4,15 @@ from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.prompts import PromptTemplate
 from langchain_core.exceptions import OutputParserException
 from dotenv import load_dotenv
+import streamlit as st
+
+API_KEY = st.secrets["API_KEY"]
+
 
 load_dotenv()
 class Chain:
     def __init__(self):
-        self.llm = ChatGroq(model="llama-3.1-70b-versatile",groq_api_key = '<YOUR_API_KEY>',temperature = 0)
+        self.llm = ChatGroq(model="llama-3.3-70b-versatile",groq_api_key = API_KEY,temperature = 0)
     def extract_jobs(self, cleaned_text):
         prompt_extract = PromptTemplate.from_template(
             """
