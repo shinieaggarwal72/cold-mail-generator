@@ -8,6 +8,7 @@ An AI-powered Cold Email Generator that automatically extracts job postings from
 
 <br>
 
+## Interface
 ![Interface](./demo/im1.png)
 
 ## Features
